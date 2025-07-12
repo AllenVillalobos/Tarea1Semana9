@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Tarea_1.Paginas.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Tarea2.aspx.cs" Inherits="Tarea_1.Paginas.Tarea2" %>
 
 <!DOCTYPE html>
 
@@ -24,6 +24,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:DropDownList runat="server" CssClass="Filtro" ID="ddlNombres" AutoPostBack="true" OnSelectedIndexChanged="ddlNombres_SelectedIndexChanged">
+
+            </asp:DropDownList>
             <asp:GridView runat="server" AutoGenerateColumns="false" EmptyDataText="No hay Nombres"
                 ID="gvNombres" CssClass="Tabla">
                 <Columns>
