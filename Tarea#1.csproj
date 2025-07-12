@@ -67,12 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\TareaSemana9.sql" />
+    <Content Include="Paginas\Tarea3.aspx" />
     <Content Include="Paginas\Tarea1.aspx" />
     <Content Include="Paginas\Tarea2.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADO\DepartamentoADO.cs" />
+    <Compile Include="ADO\PersonaADO.cs" />
+    <Compile Include="Modelos\Departamento.cs" />
     <Compile Include="Modelos\Persona.cs" />
+    <Compile Include="Paginas\Tarea3.aspx.cs">
+      <DependentUpon>Tarea3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Tarea3.aspx.designer.cs">
+      <DependentUpon>Tarea3.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Tarea1.aspx.cs">
       <DependentUpon>Tarea1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
